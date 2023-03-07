@@ -1,7 +1,9 @@
 package etu2048.framework.servlet;
 
 import java.io.*;
+import java.util.HashMap;
 
+import etu2048.framework.Mapping;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
@@ -9,6 +11,7 @@ import jakarta.servlet.annotation.*;
 @WebServlet(name = "helloServlet", value = "/*")
 public class FrontServlet extends HttpServlet {
 
+    HashMap<String, Mapping> mappingUrls;
 
     public void processRequest(HttpServletRequest request, HttpServletResponse response) throws IOException {
         HttpServletMapping m= request.getHttpServletMapping();
