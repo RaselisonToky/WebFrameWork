@@ -1,4 +1,4 @@
-package com.example.demo1;
+package etu2048.framework.servlet;
 
 import java.io.*;
 
